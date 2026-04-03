@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Word Meaning",
+  "version": "1.1",
+  "permissions": [],
+  "host_permissions": [
+    "https://api.dictionaryapi.dev/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
